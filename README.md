@@ -17,3 +17,8 @@ Discord bot written using Python and nextcord library
 |-----------------|--------------------------------------------------------------------------|---------|
 | /carat          | Gets a random meme from umamusume subreddit, it also has a functionality to filter memes' that already been showed, by saving them  into the usedMemes.txt file. **Note that the  meme that you are getting from the reddit is not filtered by nsfw content.** I haven't gotten  any by myself, but it might happen.                                                                                                                                                                                                                                                                                 |<img width="729" height="726" alt="image" src="https://github.com/user-attachments/assets/b92e0dcf-3c64-4226-8714-adae10df5677" />|
 | /slots [amount] | Makes a roll in a virtual slot machine, you win if you'll roll 3 horses                                                                                                                                                                                                                                           |<img width="488" height="419" alt="image" src="https://github.com/user-attachments/assets/1655ac36-bc87-4421-9619-12342f71821d" />|
+
+
+## Plans for future
+I want to programm some minigames like in casino, cause they are quite easy to programm as well as
+make some kind of user statistics accounts so they can see how much times they won and so on..
