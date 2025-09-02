@@ -426,3 +426,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+#Save files that are unique per individual bot instance
+*.txt
