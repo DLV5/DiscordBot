@@ -1,8 +1,14 @@
+import os
 import casinoAccount
 
-class casinoAccountManager:
+class casinoAccountsManager:
     def init_saved_accounts(self):
         accounts = []
+
+        if not os.path.exists(self.accountsFileName):
+            with open(self.accountsFileName, "w") as file:
+                pass
+
         with open(self.accountsFileName, "r") as file:
             for line in file:
                 acc = casinoAccount.casinoAccount()
@@ -22,7 +28,7 @@ class casinoAccountManager:
     def print_account(self):
         print(self.accounts)
 
-accountManager = casinoAccountManager()
-accountManager.print_account()
-testAccount = casinoAccount.casinoAccount('Test5', 10000, 2, 3)
-accountManager.add_account(testAccount)
+# accountManager = casinoAccountManager()
+# accountManager.print_account()
+# testAccount = casinoAccount.casinoAccount('Test5', 10000, 2, 3)
+# accountManager.add_account(testAccount)

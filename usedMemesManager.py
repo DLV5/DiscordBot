@@ -1,3 +1,5 @@
+import os
+
 class UsedMemesManager:
 
     def __init__(self):    
@@ -6,6 +8,11 @@ class UsedMemesManager:
 
     def init_used_links(self):
         usedLinks = []
+
+        if not os.path.exists(self.filename):
+            with open(self.filename, "w") as file:
+                pass
+
         with open(self.filename, "r") as file:
             for line in file:
                 usedLinks.append(line.strip())

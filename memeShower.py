@@ -25,8 +25,9 @@ class memeShower(commands.Cog):
             memes = self.get_pack_of_memes()
             for meme in memes:
                 if not self.memesFileManager.is_used(meme['url']):
-                    self.memesFileManager.add_used_link(meme['url'])
-                    return meme['url']
+                    if False == meme['nsfw']:
+                        self.memesFileManager.add_used_link(meme['url'])
+                        return meme['url']
             retries += 1
             time.sleep(1)
         return "Not this time"
